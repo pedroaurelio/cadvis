@@ -26,8 +26,8 @@ $query=mysqli_query($conn,"INSERT INTO visita (id_visitante, entrada, empresa, o
 
     <body>
       <div class="container theme-showcase" role="main">
-    <?php    
-    
+    <?php
+
     if(mysqli_affected_rows($conn) > 0){ ?>
       <!-- Modal -->
       <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -41,11 +41,11 @@ $query=mysqli_query($conn,"INSERT INTO visita (id_visitante, entrada, empresa, o
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-info" data-dismiss="modal">Corrigir Visita</button>
-              <a href="http://localhost/login/administrativo.php?link=1"><button type="button" class="btn btn-success">Ok</button></a>
+              <a href="http://localhost/cadvis/administrativo.php?link=1"><button type="button" class="btn btn-success">Ok</button></a>
             </div>
           </div>
         </div>
-      </div>        
+      </div>
       <script>
         $(document).ready(function () {
           $('#myModal').modal('show');
@@ -59,16 +59,16 @@ $query=mysqli_query($conn,"INSERT INTO visita (id_visitante, entrada, empresa, o
             <div class="modal-header">
               <h4 class="modal-title" id="myModalLabel">Erro ao cadastrar a visita!</h4>
             </div>
-            <div class="modal-body">                
+            <div class="modal-body">
               <?php
                echo $nome; ?>
             </div>
             <div class="modal-footer">
-              <a href="http://localhost/login/administrativo.php?link=1"><button type="button" class="btn btn-danger">Ok</button></a>
+              <a href="http://localhost/cadvis/administrativo.php?link=1"><button type="button" class="btn btn-danger">Ok</button></a>
             </div>
           </div>
         </div>
-      </div>      
+      </div>
       <script>
         $(document).ready(function () {
           $('#myModal').modal('show');

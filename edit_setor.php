@@ -2,9 +2,9 @@
     $id = $_GET['id'];
 
     // Executa a consulta
-    $result=mysqli_query($conn,"SELECT * FROM categorias WHERE id='$id' LIMIT 1");
+    $result=mysqli_query($conn,"SELECT * FROM setor WHERE id='$id' LIMIT 1");
     $resultado=mysqli_fetch_assoc($result);
- 
+
 ?>  
       <div class="container">
        
@@ -20,9 +20,10 @@
           <a href='processa/processa_apagar_cat_prod.php?id=<?php echo $resultado['id'];?>'> <button type='button' class='btn btn-sm btn-danger'> Apagar</button></a>
           </div>
           </div>
+          </br>
       <div class="row">
         <div class="col-md-12">
-        <form class="form-horizontal" method="POST" action="processa/processa_edit_cat_prod.php">
+        <form class="form-horizontal" method="POST" action="processa/processa_edit_setor.php">
   <div class="form-group">
     <label for="inputEmail3" class="col-sm-2 control-label">Nome</label>
     <div class="col-sm-10">

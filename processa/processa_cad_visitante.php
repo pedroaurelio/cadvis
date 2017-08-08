@@ -51,7 +51,7 @@ $query=mysqli_query($conn,"INSERT INTO visitante (nome, nome_mae, nome_pai, rg, 
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-info" data-dismiss="modal">Corrigir Cadastro</button>
-              <a href="http://localhost/login/administrativo.php?link=2"><button type="button" class="btn btn-success">Ok</button></a>
+              <a href="http://localhost/cadvis/administrativo.php?link=2"><button type="button" class="btn btn-success">Ok</button></a>
             </div>
           </div>
         </div>
@@ -73,7 +73,7 @@ $query=mysqli_query($conn,"INSERT INTO visitante (nome, nome_mae, nome_pai, rg, 
               <?php echo $nome; ?>
             </div>
             <div class="modal-footer">
-              <a href="http://localhost/login/administrativo.php?link=2"><button type="button" class="btn btn-danger">Ok</button></a>
+              <a href="http://localhost/cadvis/administrativo.php?link=2"><button type="button" class="btn btn-danger">Ok</button></a>
             </div>
           </div>
         </div>

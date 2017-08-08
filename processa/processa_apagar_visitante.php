@@ -19,7 +19,7 @@ $resultado=mysqli_query($conn,$query);
     <script src="../js/jquery.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
   </head>
-    </head>
+
 
     <body>
       <div class="container theme-showcase" role="main">
@@ -38,7 +38,7 @@ $resultado=mysqli_query($conn,$query);
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-info" data-dismiss="modal">Corrigir Cadastro</button>
-              <a href="http://localhost/login/administrativo.php?link=2"><button type="button" class="btn btn-success">Ok</button></a>
+              <a href="http://localhost/cadvis/administrativo.php?link=2"><button type="button" class="btn btn-success">Ok</button></a>
             </div>
           </div>
         </div>
@@ -60,7 +60,7 @@ $resultado=mysqli_query($conn,$query);
               
             </div>
             <div class="modal-footer">
-              <a href="http://localhost/login/administrativo.php?link=2"><button type="button" class="btn btn-danger">Ok</button></a>
+              <a href="http://localhost/cadvis/administrativo.php?link=2"><button type="button" class="btn btn-danger">Ok</button></a>
             </div>
           </div>
         </div>

@@ -1,17 +1,14 @@
-    
+
    <?php
 
         $resultado=mysqli_query($conn, "SELECT * FROM visitante ORDER BY 'id'");
         $linhas=mysqli_num_rows($resultado);
-        
-        
-    ?>    
-    
+
+    ?>
       <div class="container">
       <div class="page-header">
         <h1>Lista de Visitantes</h1>
       </div>
-          
 
 
       <div class="row">
@@ -20,9 +17,7 @@
           </div>
           </div>
           </br>
-               
 
-      
         <div class="row">
         <div class="col-md-12">
           <table class="table table-condensed table-hover" id="tabela_procurar">
@@ -45,21 +40,21 @@
                       echo "<td>".$linhas['nome_mae']."</td>";
                       echo "<td>".$linhas['data_nascimento']."</td>";
                       echo "<td>".$linhas['empresa']."</td>";
-                      ?> 
-                      <td> 
+                      ?>
+                      <td>
                       <a href ='administrativo.php?link=5&id=<?php echo $linhas['id']; ?>'><button type='button' class='btn btn-xs btn-primary'>Visualizar</button></a>
 
                       <a href ='administrativo.php?link=4&id=<?php echo $linhas['id']; ?>'><button type='button' class='btn btn-xs btn-warning'>Editar</button></a>
-                      
+
                       <a href ='processa/processa_apagar_visitante.php?id=<?php echo $linhas['id'];?>'><button type='button' class='btn btn-xs btn-danger'>Apagar</button></a>
-                      
+
 
                       <?php
                   echo "</tr>";
               }
               ?>
 
-              
+
             </tbody>
           </table>
         </div>

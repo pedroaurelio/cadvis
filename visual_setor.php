@@ -10,7 +10,7 @@
        
       
       <div class="page-header">
-        <h1>Visualizar Categoria</h1>
+        <h1>Visualizar Setor</h1>
       </div>
       <div class="row">
         <div class="pull-right">
@@ -18,33 +18,31 @@
 
           <a href='administrativo.php?link=9&id=<?php echo $resultado['id']; ?>'> <button type='button' class='btn btn-sm btn-warning'> Editar</button></a>
 
-          <a href='processa/processa_apagar_cat_prod.php?id=<?php echo $resultado['id'];?>'> <button type='button' class='btn btn-sm btn-danger'> Apagar</button></a>
+          <a href='processa/processa_apagar_setor.php?id=<?php echo $resultado['id'];?>'> <button type='button' class='btn btn-sm btn-danger'> Apagar</button></a>
           </div>
         </div>
 
       <div class="row">
 
         <div class="col-md-12">
-
 		      <div class="col-sm-3 col-md-3">
-              <b>ID:</b> 
+              <b>ID:</b>
           </div>
           <div class="col-sm-9 col-md-9">
             <?php echo $resultado['id']; ?>
           </div>
+          </div>
 
           <div class="col-sm-3 col-md-3">
-              <b>Nome da Categoria:</b> 
+              <b>Nome:</b>
           </div>
           <div class="col-sm-9 col-md-9">
             <?php echo $resultado['nome']; ?>
-          </div>        
+          </div>
+          </div>
 
 
         </div>
       </div>
 
     </div> <!-- /container -->
-
-
-    

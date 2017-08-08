@@ -45,7 +45,7 @@
     unset ( $_SESSION['usuarioId'],
             $_SESSION['usuarioNome'],
             $_SESSION['usuarioNiveisAcessoId']);
-            
+
   ?>
 
   </br>
@@ -62,9 +62,7 @@
 
 
       <form class="form-signin" method="POST" action="valida_login.php">
-        <div class=" col-md-12 text-center">
-        <img height="150" width="150" class="profile-img-card" class="img-circle" />
-        </div>
+        
         <div style="margin-bottom: 25px" class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
         <input type="int" name="cpf" class="form-control" placeholder="Digitar o CPF" required autofocus>

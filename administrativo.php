@@ -1,7 +1,7 @@
 <?php
   session_start();
   require_once("seguranca.php");
-  require_once("conexao.php"); 
+  require_once("conexao.php");
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -37,12 +37,12 @@
     <![endif]-->
   </head>
 
-  <body>  
-   
+  <body>
+
     <?php
-        require_once("menu_admin.php");        
-         
-         
+        require_once("menu_admin.php");
+
+
         $pag[1] = "bem_vindo.php";
         $pag[2] = "procurar.php";
         $pag[3] = "cad_visitante.php";
@@ -58,34 +58,30 @@
         $pag[13] = "relatorio_n.php";
         $pag[14] = "relatorio_dia.php";
         $pag[15] = "relatorio_d.php";
-      
 
-      
-      
 
      if(isset($_GET['link'])){
       $link = $_GET['link'];
-          
+
          if(file_exists($pag[$link])){
            include $pag[$link];
-            }else{ 
+            }else{
               include('bem-vindo.php');
-             } 
-           }else{ 
-            include('bem-vindo.php'); 
+             }
+           }else{
+            include('bem-vindo.php');
          }
 
 
     ?>
-                  
-      
+
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
-    <script src="js/bootstrap.min.js"></script>    
+    <script src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src= "js/jasny-bootstrap.min.js" > </script>
     <script src= "js/jquery.consultar-cep.min.js"></script>
@@ -107,18 +103,18 @@
 
     </script>
 
-    <script src= "js/jasny-bootstrap.min.js" > </script> 
+    <script src= "js/jasny-bootstrap.min.js" > </script>
 
 
-<link rel="stylesheet" href="//cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css">   
+<link rel="stylesheet" href="//cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css">
     <script src="//cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
     <script>
           $(document).ready(function(){
-          $('#tabela_procurar').DataTable({ 
-          "pagingType": "full_numbers",                       
+          $('#tabela_procurar').DataTable({
+          "pagingType": "full_numbers",
                     "language": {
                         "url": "js/br.txt"
-                    }               
+                    }
                });
            });
 

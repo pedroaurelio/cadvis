@@ -1,14 +1,13 @@
 
     <div class="container">
-       
-      
+
       <div class="page-header">
         <h1>Cadastrar Visitante</h1>
 
       </div>
       <div class="row espaco">
         <div class="pull-right">
-          <a href='administrativo.php?link=2&id=<?php echo $resultado['id']; ?>'> <button type='button' class='btn btn-sm btn-info'> Listar</button></a><br></br>
+          <a href='administrativo.php?link=2'> <button type='button' class='btn btn-sm btn-info'> Listar</button></a><br></br>
          </div>
 
           <div class="row">
@@ -21,9 +20,9 @@
     <label for="inputEmail3" class="col-sm-2 control-label"></label>
 <span>Webcam could not be started. Did you give access to it?</span>
 </div>
-    <webcam channel="channel" 
-        on-streaming="onSuccess()" 
-        on-error="onError(err)" 
+    <webcam channel="channel"
+        on-streaming="onSuccess()"
+        on-error="onError(err)"
         on-stream="onStream(stream)"></webcam>
         <label for="inputEmail3" class="col-sm-2 control-label"></label>
     <button ng-click="makeSnapshot()">take picture</button>
@@ -33,7 +32,7 @@
 </br>
 </br>
 
-     
+
   <div class="form-group has-feedback">
     <label for="inputEmail3" class="col-sm-2 control-label">Nome</label>
     <div class="col-sm-10">
@@ -78,7 +77,7 @@
   <div class="form-group">
     <label for="inputEmail3" class="col-sm-2 control-label">Data de Nascimento</label>
     <div class="col-sm-10">
-      <input type= "text" class= "form-control" name= "data_nascimento" data-mask= "99/99/9999" placeholder="Data de Nascimento">  
+      <input type= "text" class= "form-control" name= "data_nascimento" data-mask= "99/99/9999" placeholder="Data de Nascimento">
     </div>
   </div>
   <div class="form-group">

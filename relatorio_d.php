@@ -6,7 +6,7 @@
         $dataa = implode("-",array_reverse(explode("/",$data1)));
         $datab = implode("-",array_reverse(explode("/",$data2)));
 
-        $resultado=mysqli_query($conn, " SELECT visita.*, setor.nome AS setor, visitante.nome AS visitante FROM visita JOIN setor ON (setor = setor.id) JOIN visitante ON (id_visitante = visitante.id) WHERE entrada BETWEEN '$dataa' and '$datab' ");
+        $resultado=mysqli_query($conn, " SELECT visita.*, setor.nome AS setor, visitante.nome AS visitante FROM visita LEFT OUTER JOIN setor ON (setor = setor.id) JOIN visitante ON (id_visitante = visitante.id) WHERE entrada BETWEEN '$dataa' and '$datab' ");
         $linhas=mysqli_num_rows($resultado);
     ?>
 
@@ -16,7 +16,7 @@
       </div>
 
       <div>
-<a href ='administrativo.php?link=12'><button type='button' class='btn btn-primary glyphicon glyphicon-backward'>VOLTAR</button></a>
+<a href ='administrativo.php?link=12'><button type='button' class='btn btn-primary glyphicon glyphicon-backward'> VOLTAR </button></a>
     </div>
     </br>
     </br>

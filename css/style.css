@@ -1,11 +1,10 @@
-body {  
-        background-color: grey;
+body {
+        background-color: #eee;
         //*background-image: url(../img/pvh2.jpg);*/
-        background-size: cover;        
+       /background-size: cover;
         background-repeat: no-repeat;
-        background-position: center; 
+        background-position: center;
         background-attachment: fixed;
-      
 }
 
 .wrapper {

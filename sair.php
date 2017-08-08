@@ -9,6 +9,6 @@ unset ( $_SESSION['usuarioId'],
         $_SESSION['usuarioEmail']);
 
 //Redicrecionar o usuario para a pagina de Login
-header("Location: login.php");
+header("Location: index.php");
 
 ?>

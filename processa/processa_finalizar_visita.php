@@ -35,12 +35,12 @@ $query=mysqli_query($conn,"UPDATE visita set saida = NOW(), visita_em_andamento 
             <div class="modal-body">
               <?php echo 'A visita de' .$nome.  'foi finalizada'; ?>
             </div>
-            <div class="modal-footer">              
-              <a href="http://localhost/login/administrativo.php?link=1"><button type="button" class="btn btn-success">Ok</button></a>
+            <div class="modal-footer">
+              <a href="http://localhost/cadvis/administrativo.php?link=1"><button type="button" class="btn btn-success">Ok</button></a>
             </div>
           </div>
         </div>
-      </div>        
+      </div>
       <script>
         $(document).ready(function () {
           $('#myModal').modal('show');
@@ -54,12 +54,12 @@ $query=mysqli_query($conn,"UPDATE visita set saida = NOW(), visita_em_andamento 
             <div class="modal-header">
               <h4 class="modal-title" id="myModalLabel">Erro ao cadastrar o usuário!</h4>
             </div>
-            <div class="modal-body">                
+            <div class="modal-body"> 
               <?php
                echo $nome; ?>
             </div>
             <div class="modal-footer">
-              <a href="http://localhost/login/administrativo.php?link=1"><button type="button" class="btn btn-danger">Ok</button></a>
+              <a href="http://localhost/cadvis/administrativo.php?link=1"><button type="button" class="btn btn-danger">Ok</button></a>
             </div>
           </div>
         </div>
